@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EmpowerED Copilot Design System - Academic Excellence Theme */
+
+@layer base {
+  :root {
+    /* Core academic color palette */
+    --background: 0 0% 99%;
+    --foreground: 215 25% 15%;
+    
+    /* Educational brand colors */
+    --primary: 215 85% 45%;
+    --primary-dark: 215 85% 35%;
+    --primary-light: 215 85% 55%;
+    --primary-muted: 215 45% 85%;
+    
+    /* Academic accent colors */
+    --academic-blue: 210 90% 50%;
+    --academic-navy: 215 85% 25%;
+    --success-green: 140 70% 45%;
+    --warning-amber: 35 85% 55%;
+    --error-red: 0 75% 55%;
+    
+    /* Gradients for visual appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 45%), hsl(210 90% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 45%), hsl(220 75% 35%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(215 20% 98%));
+    
+    /* Semantic colors */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --card-border: 215 15% 90%;
+    
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 15% 45%;
+    
+    --accent: 215 85% 45%;
+    --accent-foreground: 0 0% 100%;
+    
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 215 25% 20%;
+    
+    --border: 215 15% 88%;
+    --input: 215 15% 94%;
+    --ring: 215 85% 45%;
+    
+    /* Interactive states */
+    --hover-primary: 215 85% 40%;
+    --active-primary: 215 85% 35%;
+    
+    /* Shadows and elevation */
+    --shadow-sm: 0 1px 2px hsl(215 25% 15% / 0.05);
+    --shadow-md: 0 4px 6px hsl(215 25% 15% / 0.07), 0 2px 4px hsl(215 25% 15% / 0.06);
+    --shadow-lg: 0 10px 15px hsl(215 25% 15% / 0.1), 0 4px 6px hsl(215 25% 15% / 0.05);
+    --shadow-xl: 0 20px 25px hsl(215 25% 15% / 0.1), 0 10px 10px hsl(215 25% 15% / 0.04);
+    
+    /* Animation and timing */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --radius: 8px;
+    --radius-sm: 4px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    
+    /* Additional semantic tokens */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+    
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Sidebar tokens for navigation */
+    --sidebar-background: 215 20% 97%;
+    --sidebar-foreground: 215 25% 20%;
+    --sidebar-primary: 215 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 20% 92%;
+    --sidebar-accent-foreground: 215 25% 25%;
+    --sidebar-border: 215 15% 85%;
+    --sidebar-ring: 215 85% 45%;
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 0 0% 98%;
+    
+    --primary: 215 85% 55%;
+    --primary-dark: 215 85% 45%;
+    --primary-light: 215 85% 65%;
+    --primary-muted: 215 45% 25%;
+    
+    --card: 215 25% 10%;
+    --card-foreground: 0 0% 98%;
+    --card-border: 215 15% 20%;
+    
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 15% 65%;
+    
+    --accent: 215 85% 55%;
+    --accent-foreground: 215 25% 8%;
+    
+    --secondary: 215 20% 18%;
+    --secondary-foreground: 0 0% 95%;
+    
+    --border: 215 15% 20%;
+    --input: 215 15% 18%;
+    --ring: 215 85% 55%;
+    
+    --popover: 215 25% 10%;
+    --popover-foreground: 0 0% 98%;
+    
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 215 25% 8%;
+    
+    --sidebar-background: 215 25% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 215 85% 55%;
+    --sidebar-primary-foreground: 215 25% 8%;
+    --sidebar-accent: 215 20% 20%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 215 15% 25%;
+    --sidebar-ring: 215 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold leading-tight;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

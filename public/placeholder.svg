@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" fill="none">
+  <rect width="1200" height="1200" fill="#1E2A38" rx="3"/>
+  <!-- Graduation Cap -->
+  <path d="M600 400L900 520L600 640L300 520L600 400Z" fill="#2D9CDB"/>
+  <path d="M600 640V760" stroke="#2D9CDB" stroke-width="24" stroke-linecap="round"/>
+  <!-- Chat Bubble -->
+  <path d="M420 780H780C830 780 860 810 860 860V940C860 990 830 1020 780 1020H540L460 1080V1020H420C370 1020 340 990 340 940V860C340 810 370 780 420 780Z" fill="#56CCF2"/>
+  <!-- AI Gear Icon Inside Chat -->
+  <circle cx="600" cy="900" r="70" fill="#fff"/>
+  <path d="M600 850L620 870M600 850L580 870M600 950L620 930M600 950L580 930M650 900L630 880M650 900L630 920M550 900L570 880M550 900L570 920" stroke="#2D9CDB" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="600" cy="900" r="20" fill="#2D9CDB"/>
+</svg>
