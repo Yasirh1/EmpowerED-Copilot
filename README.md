@@ -5,7 +5,7 @@ EmpowerED Copilot is a web application designed to help students manage and inte
 
 The project emphasizes accessibility, performance, and a modern developer experience.
 
-Live URL: https://lovable.dev/projects/6f8a4241-128f-405a-8454-ca75b273cf95
+Live URL: [https://lovable.dev/projects/6f8a4241-128f-405a-8454-ca75b273cf95](https://empower-ed-copilot.vercel.app/)
 
 Getting Started
 
